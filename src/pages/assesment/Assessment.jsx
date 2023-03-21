@@ -15,7 +15,7 @@ const Assessment = () => {
                 </div>
                 <div className="col-md-6">
                     <div style={st}><NavLink title="Test for the students having  dyscalculia" to='/math'><h3>Math</h3></NavLink></div>
-                    <div style={st}><NavLink to='/writing'><h3>Speech</NavLink></div>
+                    <div style={st}><NavLink to='/writing'><h3>Speech</h3></NavLink></div>
                 </div>
             </div>
         </div>

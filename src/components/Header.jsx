@@ -1,7 +1,18 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Header(props) {
+
+  let navigate = useNavigate()
+
+
+  const handleLogout = ()=>{
+     localStorage.removeItem("user");
+     navigate('/signup')
+  }
+  let user = JSON.parse(localStorage.getItem('user'));
+
   return (
     <header className="header-area">
       <div className="navbar-area">
@@ -51,18 +62,34 @@ function Header(props) {
                         </NavLink>
                       {/* ) : null} */}
                     </li>
+                    {
+                      user &&    <li className="nav-item">
+                      {/* {props.auth ? ( */}
+                        <NavLink to="/dashboard" activeclassname="active">
+                          Dashboard
+                        </NavLink>
+                      {/* ) : null} */}
+                    </li>
+                    }
                   </ul>
                 </div>
 
                 <div className="navbar-btn d-none d-sm-inline-block">
                   {/* {props.auth ? null : ( */}
-                    <NavLink
+                   {!user? <NavLink
                       to="/signup"
                       activeclassname="active"
                       className="main-btn"
                     >
                       Sign up
-                    </NavLink>
+                    </NavLink> : 
+                     <button
+                      onClick={handleLogout}
+                      activeclassname="active"
+                      className="main-btn"
+                    >
+                      Log Out
+                    </button>}
                 </div>
 
                 <div className="navbar-btn d-none d-sm-inline-block">

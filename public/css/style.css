@@ -575,7 +575,6 @@ p {
     font-size: 14px;
     font-weight: 600;
     color: rgb(0, 0, 0);
-    text-shadow:0 0 6px rgb(63, 62, 62,0.6);
     -webkit-transition: all 0.3s linear;
     -moz-transition: all 0.3s linear;
     -ms-transition: all 0.3s linear;

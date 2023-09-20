@@ -74,7 +74,7 @@ const Header = (props) => {
         <div className="header" ref={navRef}>
           <div className="navbar-brand">
             <Link to="/">
-              <img src="images/newLogo.png" alt="Logo" />
+              <img className="logoImg" src="images/logo.png" alt="Logo" />
             </Link>
           </div>
           <div className="navbar2" ref={crossRef} onClick={changeBars}>

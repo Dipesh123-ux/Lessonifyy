@@ -1,29 +1,32 @@
 import React, { useEffect, useState } from "react";
 import "./dashboard.css";
-import { Button, Container, Row, Col } from 'react-bootstrap';
+import { Button, Container, Row, Col } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
   let user = JSON.parse(localStorage.getItem("user"));
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const redirectToPage1 = () => {
-    navigate('/result',{state : {title : 'problemSolving'}});
+    navigate("/result", { state: { title: "problemSolving" } });
   };
 
   const redirectToPage2 = () => {
-    navigate('/result',{state : {title : 'memory'}});
+    navigate("/result", { state: { title: "memory" } });
   };
 
   const redirectToPage3 = () => {
-    navigate('/result',{state : {title : 'decisionMaking'}});
+    navigate("/result", { state: { title: "decisionMaking" } });
   };
 
   const redirectToPage4 = () => {
-    navigate('/result',{state : {title : 'attention'}});
+    navigate("/result", { state: { title: "attention" } });
   };
 
   return (
-    <div style={{ marginTop: "100px" }} class="container mt-5">
+    <div
+      style={{ marginTop: "100px" }}
+      class="dashboardContainer container mt-5"
+    >
       <div
         style={{ marginTop: "100px" }}
         class="row d-flex justify-content-center"
@@ -49,7 +52,7 @@ const Dashboard = () => {
       <br />
       <br />
       <Container className="text-center">
-        <Row >
+        <Row>
           <Col>
             <Button variant="primary w-50 m-2" onClick={redirectToPage1}>
               Problem Solving

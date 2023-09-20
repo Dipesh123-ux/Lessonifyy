@@ -9,6 +9,10 @@ body {
   color: #fff;
 }
 
+.dashboardContainer {
+  min-height: 70vh;
+}
+
 .card {
   border: none;
   position: relative;

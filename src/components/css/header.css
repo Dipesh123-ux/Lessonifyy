@@ -1,5 +1,11 @@
 .navbar-brand {
-  margin-top: 17px;
+  z-index: 10;
+}
+.logoImg {
+  margin-top: -160px;
+  margin-left: -30px;
+  height: 350px;
+  width: 350px;
 }
 .layoutContainer {
   position: relative;

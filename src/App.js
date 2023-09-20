@@ -21,7 +21,7 @@ const App = () => {
         <Route path="/home" exact element={<Landing />}></Route>
         <Route path="/screening" exact element={<Screening />}></Route>
         <Route path="/signup" exact element={<Signup />}></Route>
-        <Route path="/login_pg" exact element={<Login />}></Route>
+        <Route path="/signin" exact element={<Login />}></Route>
         <Route path="/assesment" exact element={<Assessment />}></Route>
         <Route path="/problemSolving" exact element={<Maths />}></Route>
         <Route path="/memory" exact element={<MemoryGame />}></Route>

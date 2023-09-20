@@ -49,14 +49,14 @@ const Signup = () => {
     const response = await result.json();
     if (response.message === "success") {
       setValues(defaultValues);
-      navigate("/login_pg");
+      navigate("/signin");
     }
   };
 
   return (
     <div className="signupDiv">
       <form className="signupForm" onSubmit={handleSubmit}>
-        <h3>Sign Up</h3>
+        <h3 className="loginHeading">Sign Up</h3>
         <div className="form-group">
           <input
             type="text"
@@ -138,7 +138,7 @@ const Signup = () => {
           Sign Up
         </button>
         <p className="forgot-password text-right">
-          Already registered <Link to="/login_pg">sign in?</Link>
+          Already registered <Link to="/signin">sign in?</Link>
         </p>
       </form>
     </div>

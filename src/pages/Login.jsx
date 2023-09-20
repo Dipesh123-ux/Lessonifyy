@@ -32,11 +32,10 @@ const Login = () => {
   };
 
   return (
-    <div className="signupDiv">
-      <form className="signupForm" onSubmit={handleSubmit}>
-        <h3>Log In</h3>
-        <div className="form-group">
-          <label>Email address</label>
+    <div className="signinDiv">
+      <form className="signinForm " onSubmit={handleSubmit}>
+        <h3 className="loginHeading">Log In</h3>
+        <div className="margin-top form-group">
           <input
             onChange={(e) => setValues({ ...values, email: e.target.value })}
             type="email"
@@ -45,7 +44,6 @@ const Login = () => {
           />
         </div>
         <div className="form-group">
-          <label>Password</label>
           <input
             onChange={(e) => setValues({ ...values, password: e.target.value })}
             type="password"
@@ -57,7 +55,7 @@ const Login = () => {
           LogIn
         </button>
         <p className="forgot-password text-right">
-          <Link to="/login_pg">Forget Password?</Link>
+          <Link to="/signin">Forget Password?</Link>
         </p>
       </form>
     </div>

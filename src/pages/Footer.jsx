@@ -20,7 +20,7 @@ function Footer() {
                 data-wow-delay="0.3s"
               >
                 <a href="#">
-                  <img src="images/newLogo.png" alt="Logo" />
+                  <img src="images/logo.png" alt="Logo" />
                 </a>
               </div>
             </div>
@@ -82,7 +82,7 @@ function Footer() {
                 </div>
                 <div className="contact pt-10">
                   <p className="text"> Jabalpur, India</p>
-                  <p className="text">lessonify@gmail.com</p>
+                  <p className="text">NeuroTrain@gmail.com</p>
                   <p className="text">+99 000 000 00 00</p>
 
                   <ul className="social mt-40">

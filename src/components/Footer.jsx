@@ -31,9 +31,10 @@ function Footer() {
                 className="footer-about pt-40 wow fadeInLeftBig"
                 data-wow-duration="1s"
                 data-wow-delay="0.3s"
+                style={{marginTop:"-150px",marginLeft:"-120px"}}
               >
                 <a href="#">
-                  <img src="images/newLogo.png" alt="Logo" />
+                  <img src="images/logo.png" alt="Logo" />
                 </a>
                 {/* <p className="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, repudiandae! Totam, nemo sed? Provident.</p>
                                 <p className="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> */}
@@ -97,7 +98,7 @@ function Footer() {
                 </div>
                 <div className="contact pt-10">
                   <p className="text"> Jabalpur, India</p>
-                  <p className="text">lessonify@gmail.com</p>
+                  <p className="text">NeuroTrain@gmail.com</p>
                   <p className="text">+99 000 000 00 00</p>
 
                   <ul className="social mt-40">

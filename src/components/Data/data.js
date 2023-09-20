@@ -6,9 +6,11 @@ export const preSchool = [
       "Has difficulty sustaining attention in play activities and work tasks",
     ],
 
-    low : "The results indicate a low risk of a learning disability in Attention.",
-    medium :"Your child is showing risk of a learning disability in the area of Attention.",
-    common:"Children with attention difficulties often have Attention Deficit Hyperactivity Disorder (ADHD). There are 3 types of ADHD: Inattentive, Hyperactive-Impulsive and Combined.",
+    low: "The results indicate a low risk of a learning disability in Attention.",
+    medium:
+      "Your child is showing risk of a learning disability in the area of Attention.",
+    common:
+      "Children with attention difficulties often have Attention Deficit Hyperactivity Disorder (ADHD). There are 3 types of ADHD: Inattentive, Hyperactive-Impulsive and Combined.",
   },
   {
     id: 2,
@@ -22,9 +24,11 @@ export const preSchool = [
       "Has trouble with buttons, hooks, snaps, zippers, and/or learning to tie shoes",
       "Appears awkward and clumsy by dropping or spilling things, or knocking them over",
     ],
-    low : "The results indicate a low risk of a learning disability in Gross and Fine motor skills.",
-    medium :"Your child is showing risk of a learning disability in the area of Gross and Fine motor skills.",
-    common:"Children with learning disabilities in spelling and writing often have dyslexia and/or dysgraphia. You can read about the similarities of and differences between Dyslexia and Dysgraphia at the about section.",
+    low: "The results indicate a low risk of a learning disability in Gross and Fine motor skills.",
+    medium:
+      "Your child is showing risk of a learning disability in the area of Gross and Fine motor skills.",
+    common:
+      "Children with learning disabilities in spelling and writing often have dyslexia and/or dysgraphia. You can read about the similarities of and differences between Dyslexia and Dysgraphia at the about section.",
   },
 
   {
@@ -49,9 +53,11 @@ export const preSchool = [
       "Has difficulty modulating voice (e.g., too soft, too loud)",
       "Demonstrates early delays in learning to speak",
     ],
-    low : "The results indicate a low risk of a learning disability in Language",
-    medium :"Your child is showing risk of a learning disability in the area of Listening.",
-    common:"Children with learning disabilities in this area typically have Specific Language Impairment (SLI). Specific Language Impairment may include difficulties in reading, spelling or writing but also includes weaknesses in listening comprehension.",
+    low: "The results indicate a low risk of a learning disability in Language",
+    medium:
+      "Your child is showing risk of a learning disability in the area of Listening.",
+    common:
+      "Children with learning disabilities in this area typically have Specific Language Impairment (SLI). Specific Language Impairment may include difficulties in reading, spelling or writing but also includes weaknesses in listening comprehension.",
   },
   {
     id: 4,
@@ -64,9 +70,11 @@ export const preSchool = [
       "Has difficulty recognizing quantities without counting",
       "Has difficulty with simple counting and one-to-one correspondence between number symbols and objects",
     ],
-    low : "The results indicate a low risk of a learning disability in Math and logic",
-    medium :"Your child is showing risk of a learning disability in the area of Math & Logic. ",
-    common :"Children with a learning disability in the area of math and logic often have dyscalculia. Dyscalculia is a brain-based condition that makes processing numbers and math concepts difficult.",
+    low: "The results indicate a low risk of a learning disability in Math and logic",
+    medium:
+      "Your child is showing risk of a learning disability in the area of Math & Logic. ",
+    common:
+      "Children with a learning disability in the area of math and logic often have dyscalculia. Dyscalculia is a brain-based condition that makes processing numbers and math concepts difficult.",
   },
   {
     id: 5,
@@ -88,9 +96,10 @@ export const preSchool = [
       "Has difficulty tapping or clapping out the syllables in words",
       "Has difficulty recognizing the small units of sounds (phonemes) in spoken words",
     ],
-    low : "The results indicate a low risk of a learning disability in reading",
-    medium : "Your child is showing a risk of a learning disability in Reading.",
-    common: "About 80% of children with a reading disability have dyslexia. Because a simple parent assessment cannot diagnose your child, we strongly recommend more testing. Give your child a more robust test for dyslexia with the Lessonify Dyslexia tests, which will test your child's abilities more thoroughly to give you a more accurate result.",
+    low: "The results indicate a low risk of a learning disability in reading",
+    medium: "Your child is showing a risk of a learning disability in Reading.",
+    common:
+      "About 80% of children with a reading disability have dyslexia. Because a simple parent assessment cannot diagnose your child, we strongly recommend more testing. Give your child a more robust test for dyslexia with the NeuroTrain Dyslexia tests, which will test your child's abilities more thoroughly to give you a more accurate result.",
   },
   {
     id: 6,
@@ -100,11 +109,11 @@ export const preSchool = [
       "May not detect or respond appropriately to teasing",
       "Does not pick up on other people’s moods/feelings (e.g., may say the wrong thing at the wrong time)",
     ],
-    low : "The results indicate a low risk of a learning disability in Social and Emotional  Skills.",
-    medium :"Your child is showing risk of a learning disability in Emotion & Self-Control.",
-    common:"Learning disabilities can often have emotional side effects including low self-esteem, tantrums and depression. It is important to help your child build a growth mindset. In Lexercise therapy we provide positive reinforcement and teach mindfulness strategies to improve your child's emotional health while addressing their learning disabilities.",
-    
-    
+    low: "The results indicate a low risk of a learning disability in Social and Emotional  Skills.",
+    medium:
+      "Your child is showing risk of a learning disability in Emotion & Self-Control.",
+    common:
+      "Learning disabilities can often have emotional side effects including low self-esteem, tantrums and depression. It is important to help your child build a growth mindset. In Lexercise therapy we provide positive reinforcement and teach mindfulness strategies to improve your child's emotional health while addressing their learning disabilities.",
   },
   {
     id: 7,
@@ -116,10 +125,11 @@ export const preSchool = [
       "Dislikes and avoids writing and copying",
     ],
 
-    low : "The results indicate a low risk of a learning disability in Written Language",
-    medium : "Your child is showing a risk of a learning disability in Spelling & Writing. ",
-    common : "Children with learning disabilities in spelling and writing often have dyslexia and/or dysgraphia. You can read about the similarities of and differences between Dyslexia and Dysgraphia at the about section.",
-
+    low: "The results indicate a low risk of a learning disability in Written Language",
+    medium:
+      "Your child is showing a risk of a learning disability in Spelling & Writing. ",
+    common:
+      "Children with learning disabilities in spelling and writing often have dyslexia and/or dysgraphia. You can read about the similarities of and differences between Dyslexia and Dysgraphia at the about section.",
   },
   {
     id: 8,
@@ -130,9 +140,10 @@ export const preSchool = [
       "Confuses left and right",
     ],
 
-    low : "The results indicate a low risk of a learning disability. ",
-    medium : "Your child is showing a risk of a learning disability. ",
-    common : "Children with learning disabilities often have dyslexia and/or dysgraphia. ",
+    low: "The results indicate a low risk of a learning disability. ",
+    medium: "Your child is showing a risk of a learning disability. ",
+    common:
+      "Children with learning disabilities often have dyslexia and/or dysgraphia. ",
   },
 ];
 
@@ -152,9 +163,11 @@ export const Grades_K_4 = [
       "Does not appear to listen when spoken to directly",
     ],
 
-    low : "The results indicate a low risk of a learning disability in Attention.",
-    medium :"Your child is showing risk of a learning disability in the area of Attention.",
-    common:"Children with attention difficulties often have Attention Deficit Hyperactivity Disorder (ADHD). There are 3 types of ADHD: Inattentive, Hyperactive-Impulsive and Combined.",
+    low: "The results indicate a low risk of a learning disability in Attention.",
+    medium:
+      "Your child is showing risk of a learning disability in the area of Attention.",
+    common:
+      "Children with attention difficulties often have Attention Deficit Hyperactivity Disorder (ADHD). There are 3 types of ADHD: Inattentive, Hyperactive-Impulsive and Combined.",
   },
   {
     id: 2,
@@ -170,9 +183,11 @@ export const Grades_K_4 = [
       "Appears awkward and clumsy by dropping or spilling things, or knocking them over",
     ],
 
-    low : "The results indicate a low risk of a learning disability in Gross and Fine motor skills.",
-    medium :"Your child is showing risk of a learning disability in the area of Gross and Fine motor skills.",
-    common:"Children with learning disabilities in spelling and writing often have dyslexia and/or dysgraphia. You can read about the similarities of and differences between Dyslexia and Dysgraphia at the about section.",
+    low: "The results indicate a low risk of a learning disability in Gross and Fine motor skills.",
+    medium:
+      "Your child is showing risk of a learning disability in the area of Gross and Fine motor skills.",
+    common:
+      "Children with learning disabilities in spelling and writing often have dyslexia and/or dysgraphia. You can read about the similarities of and differences between Dyslexia and Dysgraphia at the about section.",
   },
   {
     id: 3,
@@ -197,9 +212,11 @@ export const Grades_K_4 = [
       "Demonstrates early delays in learning to speak",
     ],
 
-    low : "The results indicate a low risk of a learning disability in Language",
-    medium :"Your child is showing risk of a learning disability in the area of Listening.",
-    common:"Children with learning disabilities in this area typically have Specific Language Impairment (SLI). Specific Language Impairment may include difficulties in reading, spelling or writing but also includes weaknesses in listening comprehension.",
+    low: "The results indicate a low risk of a learning disability in Language",
+    medium:
+      "Your child is showing risk of a learning disability in the area of Listening.",
+    common:
+      "Children with learning disabilities in this area typically have Specific Language Impairment (SLI). Specific Language Impairment may include difficulties in reading, spelling or writing but also includes weaknesses in listening comprehension.",
   },
   {
     id: 4,
@@ -218,9 +235,11 @@ export const Grades_K_4 = [
       "Has trouble learning and applying formulas and rules for calculation and problem solving",
     ],
 
-    low : "The results indicate a low risk of a learning disability in Math and logic",
-    medium :"Your child is showing risk of a learning disability in the area of Math & Logic. ",
-    common :"Children with a learning disability in the area of math and logic often have dyscalculia. Dyscalculia is a brain-based condition that makes processing numbers and math concepts difficult.",
+    low: "The results indicate a low risk of a learning disability in Math and logic",
+    medium:
+      "Your child is showing risk of a learning disability in the area of Math & Logic. ",
+    common:
+      "Children with a learning disability in the area of math and logic often have dyscalculia. Dyscalculia is a brain-based condition that makes processing numbers and math concepts difficult.",
   },
   {
     id: 5,
@@ -243,9 +262,10 @@ export const Grades_K_4 = [
       "Has difficulty recognizing the small units of sounds (phonemes) in spoken words",
     ],
 
-    low : "The results indicate a low risk of a learning disability in reading",
-    medium : "Your child is showing a risk of a learning disability in Reading.",
-    common: "About 80% of children with a reading disability have dyslexia. Because a simple parent assessment cannot diagnose your child, we strongly recommend more testing. Give your child a more robust test for dyslexia with the Lessonify Dyslexia tests, which will test your child's abilities more thoroughly to give you a more accurate result.",
+    low: "The results indicate a low risk of a learning disability in reading",
+    medium: "Your child is showing a risk of a learning disability in Reading.",
+    common:
+      "About 80% of children with a reading disability have dyslexia. Because a simple parent assessment cannot diagnose your child, we strongly recommend more testing. Give your child a more robust test for dyslexia with the NeuroTrain Dyslexia tests, which will test your child's abilities more thoroughly to give you a more accurate result.",
   },
   {
     id: 6,
@@ -257,9 +277,11 @@ export const Grades_K_4 = [
       "Does not pick up on other people’s moods/feelings (e.g., may say the wrong thing at the wrong time)",
     ],
 
-    low : "The results indicate a low risk of a learning disability in Social and Emotional  Skills.",
-    medium :"Your child is showing risk of a learning disability in Emotion & Self-Control.",
-    common:"Learning disabilities can often have emotional side effects including low self-esteem, tantrums and depression. It is important to help your child build a growth mindset. In Lexercise therapy we provide positive reinforcement and teach mindfulness strategies to improve your child's emotional health while addressing their learning disabilities.",
+    low: "The results indicate a low risk of a learning disability in Social and Emotional  Skills.",
+    medium:
+      "Your child is showing risk of a learning disability in Emotion & Self-Control.",
+    common:
+      "Learning disabilities can often have emotional side effects including low self-esteem, tantrums and depression. It is important to help your child build a growth mindset. In Lexercise therapy we provide positive reinforcement and teach mindfulness strategies to improve your child's emotional health while addressing their learning disabilities.",
   },
   {
     id: 7,
@@ -278,9 +300,11 @@ export const Grades_K_4 = [
       "Dislikes and avoids writing and copying",
     ],
 
-    low : "The results indicate a low risk of a learning disability in Written Language",
-    medium : "Your child is showing a risk of a learning disability in Spelling & Writing. ",
-    common : "Children with learning disabilities in spelling and writing often have dyslexia and/or dysgraphia. You can read about the similarities of and differences between Dyslexia and Dysgraphia at the about section.",
+    low: "The results indicate a low risk of a learning disability in Written Language",
+    medium:
+      "Your child is showing a risk of a learning disability in Spelling & Writing. ",
+    common:
+      "Children with learning disabilities in spelling and writing often have dyslexia and/or dysgraphia. You can read about the similarities of and differences between Dyslexia and Dysgraphia at the about section.",
   },
   {
     id: 8,
@@ -293,10 +317,11 @@ export const Grades_K_4 = [
       "Has a poor sense of direction; is slow to learn the way around a new place; is easily lost or confused in unfamiliar surroundings",
       "Confuses left and right",
     ],
-    
-    low : "The results indicate a low risk of a learning disability. ",
-    medium : "Your child is showing a risk of a learning disability. ",
-    common : "Children with learning disabilities often have dyslexia and/or dysgraphia. ",
+
+    low: "The results indicate a low risk of a learning disability. ",
+    medium: "Your child is showing a risk of a learning disability. ",
+    common:
+      "Children with learning disabilities often have dyslexia and/or dysgraphia. ",
   },
 ];
 
@@ -316,9 +341,11 @@ export const Grades_5_8 = [
       "Does not appear to listen when spoken to directly",
     ],
 
-    low : "The results indicate a low risk of a learning disability in Attention.",
-    medium :"Your child is showing risk of a learning disability in the area of Attention.",
-    common:"Children with attention difficulties often have Attention Deficit Hyperactivity Disorder (ADHD). There are 3 types of ADHD: Inattentive, Hyperactive-Impulsive and Combined.",
+    low: "The results indicate a low risk of a learning disability in Attention.",
+    medium:
+      "Your child is showing risk of a learning disability in the area of Attention.",
+    common:
+      "Children with attention difficulties often have Attention Deficit Hyperactivity Disorder (ADHD). There are 3 types of ADHD: Inattentive, Hyperactive-Impulsive and Combined.",
   },
   {
     id: 2,
@@ -329,9 +356,11 @@ export const Grades_5_8 = [
       "Has limited success with games and activities that demand changes in body position and/or hand-eye coordination",
     ],
 
-    low : "The results indicate a low risk of a learning disability in Gross and Fine motor skills.",
-    medium :"Your child is showing risk of a learning disability in the area of Gross and Fine motor skills.",
-    common:"Children with learning disabilities in spelling and writing often have dyslexia and/or dysgraphia. You can read about the similarities of and differences between Dyslexia and Dysgraphia at the about section.",
+    low: "The results indicate a low risk of a learning disability in Gross and Fine motor skills.",
+    medium:
+      "Your child is showing risk of a learning disability in the area of Gross and Fine motor skills.",
+    common:
+      "Children with learning disabilities in spelling and writing often have dyslexia and/or dysgraphia. You can read about the similarities of and differences between Dyslexia and Dysgraphia at the about section.",
   },
   {
     id: 3,
@@ -354,9 +383,11 @@ export const Grades_5_8 = [
       "Has difficulty modulating voice (e.g., too soft, too loud)",
     ],
 
-    low : "The results indicate a low risk of a learning disability in Language",
-    medium :"Your child is showing risk of a learning disability in the area of Listening.",
-    common:"Children with learning disabilities in this area typically have Specific Language Impairment (SLI). Specific Language Impairment may include difficulties in reading, spelling or writing but also includes weaknesses in listening comprehension.",
+    low: "The results indicate a low risk of a learning disability in Language",
+    medium:
+      "Your child is showing risk of a learning disability in the area of Listening.",
+    common:
+      "Children with learning disabilities in this area typically have Specific Language Impairment (SLI). Specific Language Impairment may include difficulties in reading, spelling or writing but also includes weaknesses in listening comprehension.",
   },
   {
     id: 4,
@@ -373,9 +404,11 @@ export const Grades_5_8 = [
       "Has trouble learning and applying formulas and rules for calculation and problem solving",
     ],
 
-    low : "The results indicate a low risk of a learning disability in Math and logic",
-    medium :"Your child is showing risk of a learning disability in the area of Math & Logic. ",
-    common :"Children with a learning disability in the area of math and logic often have dyscalculia. Dyscalculia is a brain-based condition that makes processing numbers and math concepts difficult.",
+    low: "The results indicate a low risk of a learning disability in Math and logic",
+    medium:
+      "Your child is showing risk of a learning disability in the area of Math & Logic. ",
+    common:
+      "Children with a learning disability in the area of math and logic often have dyscalculia. Dyscalculia is a brain-based condition that makes processing numbers and math concepts difficult.",
   },
   {
     id: 5,
@@ -394,9 +427,10 @@ export const Grades_5_8 = [
       "Has difficulty recognizing the small units of sounds (phonemes) in spoken words",
     ],
 
-    low : "The results indicate a low risk of a learning disability in reading",
-    medium : "Your child is showing a risk of a learning disability in Reading.",
-    common: "About 80% of children with a reading disability have dyslexia. Because a simple parent assessment cannot diagnose your child, we strongly recommend more testing. Give your child a more robust test for dyslexia with the Lessonify Dyslexia tests, which will test your child's abilities more thoroughly to give you a more accurate result.",
+    low: "The results indicate a low risk of a learning disability in reading",
+    medium: "Your child is showing a risk of a learning disability in Reading.",
+    common:
+      "About 80% of children with a reading disability have dyslexia. Because a simple parent assessment cannot diagnose your child, we strongly recommend more testing. Give your child a more robust test for dyslexia with the NeuroTrain Dyslexia tests, which will test your child's abilities more thoroughly to give you a more accurate result.",
   },
   {
     id: 6,
@@ -407,9 +441,11 @@ export const Grades_5_8 = [
       "Does not pick up on other people’s moods/feelings (e.g., may say the wrong thing at the wrong time)",
     ],
 
-    low : "The results indicate a low risk of a learning disability in Social and Emotional  Skills.",
-    medium :"Your child is showing risk of a learning disability in Emotion & Self-Control.",
-    common:"Learning disabilities can often have emotional side effects including low self-esteem, tantrums and depression. It is important to help your child build a growth mindset. In Lexercise therapy we provide positive reinforcement and teach mindfulness strategies to improve your child's emotional health while addressing their learning disabilities.",
+    low: "The results indicate a low risk of a learning disability in Social and Emotional  Skills.",
+    medium:
+      "Your child is showing risk of a learning disability in Emotion & Self-Control.",
+    common:
+      "Learning disabilities can often have emotional side effects including low self-esteem, tantrums and depression. It is important to help your child build a growth mindset. In Lexercise therapy we provide positive reinforcement and teach mindfulness strategies to improve your child's emotional health while addressing their learning disabilities.",
   },
   {
     id: 7,
@@ -443,9 +479,11 @@ export const High_School_Young_Adult = [
       "Does not appear to listen when spoken to directly",
     ],
 
-    low : "The results indicate a low risk of a learning disability in Attention.",
-    medium :"Your child is showing risk of a learning disability in the area of Attention.",
-    common:"Children with attention difficulties often have Attention Deficit Hyperactivity Disorder (ADHD). There are 3 types of ADHD: Inattentive, Hyperactive-Impulsive and Combined.",
+    low: "The results indicate a low risk of a learning disability in Attention.",
+    medium:
+      "Your child is showing risk of a learning disability in the area of Attention.",
+    common:
+      "Children with attention difficulties often have Attention Deficit Hyperactivity Disorder (ADHD). There are 3 types of ADHD: Inattentive, Hyperactive-Impulsive and Combined.",
   },
   {
     id: 2,
@@ -456,9 +494,11 @@ export const High_School_Young_Adult = [
       "Has limited success with games and activities that demand changes in body position and/or hand-eye coordination",
     ],
 
-    low : "The results indicate a low risk of a learning disability in Gross and Fine motor skills.",
-    medium :"Your child is showing risk of a learning disability in the area of Gross and Fine motor skills.",
-    common:"Children with learning disabilities in spelling and writing often have dyslexia and/or dysgraphia. You can read about the similarities of and differences between Dyslexia and Dysgraphia at the about section.",
+    low: "The results indicate a low risk of a learning disability in Gross and Fine motor skills.",
+    medium:
+      "Your child is showing risk of a learning disability in the area of Gross and Fine motor skills.",
+    common:
+      "Children with learning disabilities in spelling and writing often have dyslexia and/or dysgraphia. You can read about the similarities of and differences between Dyslexia and Dysgraphia at the about section.",
   },
   {
     id: 3,
@@ -477,9 +517,11 @@ export const High_School_Young_Adult = [
       "Has difficulty staying on topic",
     ],
 
-    low : "The results indicate a low risk of a learning disability in Language",
-    medium :"Your child is showing risk of a learning disability in the area of Listening.",
-    common:"Children with learning disabilities in this area typically have Specific Language Impairment (SLI). Specific Language Impairment may include difficulties in reading, spelling or writing but also includes weaknesses in listening comprehension.",
+    low: "The results indicate a low risk of a learning disability in Language",
+    medium:
+      "Your child is showing risk of a learning disability in the area of Listening.",
+    common:
+      "Children with learning disabilities in this area typically have Specific Language Impairment (SLI). Specific Language Impairment may include difficulties in reading, spelling or writing but also includes weaknesses in listening comprehension.",
   },
   {
     id: 4,
@@ -496,9 +538,11 @@ export const High_School_Young_Adult = [
       "Has trouble learning and applying formulas and rules for calculation and problem solving",
     ],
 
-    low : "The results indicate a low risk of a learning disability in Math and logic",
-    medium :"Your child is showing risk of a learning disability in the area of Math & Logic. ",
-    common :"Children with a learning disability in the area of math and logic often have dyscalculia. Dyscalculia is a brain-based condition that makes processing numbers and math concepts difficult.",
+    low: "The results indicate a low risk of a learning disability in Math and logic",
+    medium:
+      "Your child is showing risk of a learning disability in the area of Math & Logic. ",
+    common:
+      "Children with a learning disability in the area of math and logic often have dyscalculia. Dyscalculia is a brain-based condition that makes processing numbers and math concepts difficult.",
   },
   {
     id: 5,
@@ -513,9 +557,10 @@ export const High_School_Young_Adult = [
       "Confuses similar-looking words (e.g., beard/bread) while reading",
     ],
 
-    low : "The results indicate a low risk of a learning disability in reading",
-    medium : "Your child is showing a risk of a learning disability in Reading.",
-    common: "About 80% of children with a reading disability have dyslexia. Because a simple parent assessment cannot diagnose your child, we strongly recommend more testing. Give your child a more robust test for dyslexia with the Lessonify Dyslexia tests, which will test your child's abilities more thoroughly to give you a more accurate result.",
+    low: "The results indicate a low risk of a learning disability in reading",
+    medium: "Your child is showing a risk of a learning disability in Reading.",
+    common:
+      "About 80% of children with a reading disability have dyslexia. Because a simple parent assessment cannot diagnose your child, we strongly recommend more testing. Give your child a more robust test for dyslexia with the NeuroTrain Dyslexia tests, which will test your child's abilities more thoroughly to give you a more accurate result.",
   },
   {
     id: 6,
@@ -526,9 +571,11 @@ export const High_School_Young_Adult = [
       "Does not pick up on other people’s moods/feelings (e.g., may say the wrong thing at the wrong time)",
     ],
 
-    low : "The results indicate a low risk of a learning disability in Social and Emotional  Skills.",
-    medium :"Your child is showing risk of a learning disability in Emotion & Self-Control.",
-    common:"Learning disabilities can often have emotional side effects including low self-esteem, tantrums and depression. It is important to help your child build a growth mindset. In Lexercise therapy we provide positive reinforcement and teach mindfulness strategies to improve your child's emotional health while addressing their learning disabilities.",
+    low: "The results indicate a low risk of a learning disability in Social and Emotional  Skills.",
+    medium:
+      "Your child is showing risk of a learning disability in Emotion & Self-Control.",
+    common:
+      "Learning disabilities can often have emotional side effects including low self-esteem, tantrums and depression. It is important to help your child build a growth mindset. In Lexercise therapy we provide positive reinforcement and teach mindfulness strategies to improve your child's emotional health while addressing their learning disabilities.",
   },
   {
     id: 7,
@@ -543,8 +590,10 @@ export const High_School_Young_Adult = [
       "Dislikes and avoids writing and copying",
     ],
 
-    low : "The results indicate a low risk of a learning disability in Written Language",
-    medium : "Your child is showing a risk of a learning disability in Spelling & Writing. ",
-    common : "Children with learning disabilities in spelling and writing often have dyslexia and/or dysgraphia. You can read about the similarities of and differences between Dyslexia and Dysgraphia at the about section.",
+    low: "The results indicate a low risk of a learning disability in Written Language",
+    medium:
+      "Your child is showing a risk of a learning disability in Spelling & Writing. ",
+    common:
+      "Children with learning disabilities in spelling and writing often have dyslexia and/or dysgraphia. You can read about the similarities of and differences between Dyslexia and Dysgraphia at the about section.",
   },
 ];

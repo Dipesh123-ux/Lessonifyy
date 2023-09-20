@@ -157,7 +157,7 @@ const Maths = () => {
   return (
     <div className="mathdiv">
       <div className="mathContainer">
-        <div className="header">
+        <div className="mathheader">
           <h1 className="title">Problem Solving</h1>
         </div>
         {!gameEnded ? (

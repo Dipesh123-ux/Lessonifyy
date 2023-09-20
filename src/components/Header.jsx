@@ -105,32 +105,28 @@ const Header = (props) => {
                 })}
               </ul>
             </nav>
-            {props.auth ? null : (
-              <NavLink
-                to="/signin"
-                activeClassName="active"
-                className="main-btn"
-                style={{ marginRight: "15px" }}
-              >
-                Sign in
-              </NavLink>
-            )}
-
-            {props.auth ? null : (
-              <NavLink
-                to="/signup"
-                activeClassName="active"
-                className="main-btn"
-              >
-                Sign up
-              </NavLink>
-            )}
-
-            {!props.auth ? null : (
+            {props.auth ? null : !user ? (
+              <>
+                <NavLink
+                  to="/signin"
+                  activeClassName="active"
+                  className="main-btn"
+                  style={{ marginRight: "15px" }}
+                >
+                  Sign In
+                </NavLink>
+                <NavLink
+                  to="/signup"
+                  activeClassName="active"
+                  className="main-btn"
+                >
+                  Sign Up
+                </NavLink>
+              </>
+            ) : (
               <button
-                onClick={props.onLogOut}
-                to="/signin"
-                activeclassname="active"
+                onClick={handleLogout}
+                activeClassName="active"
                 className="main-btn"
               >
                 Log Out

@@ -186,7 +186,7 @@ const WordGame = () => {
 
   return (
     <div className="wordGameContainer">
-      <div className="App">
+      <div className="wordDiv">
         {!gameOver ? (
           <>
             <h1>Word Game</h1>

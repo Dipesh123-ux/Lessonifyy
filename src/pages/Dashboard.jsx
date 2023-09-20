@@ -1,24 +1,26 @@
 import React, { useEffect, useState } from "react";
 import "./dashboard.css";
+import { Button, Container, Row, Col } from 'react-bootstrap';
+import { useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
   let user = JSON.parse(localStorage.getItem("user"));
-  const [report, setReport] = useState([]);
-
-  const getData = async () => {
-    const result = await fetch(
-      `https://rose-upset-raven.cyclic.app/api/tests/${user.email}`,
-      {
-        method: "GET",
-      }
-    );
-    const response = await result.json();
-    setReport(response.tests);
+  const navigate = useNavigate()
+  const redirectToPage1 = () => {
+    navigate('/result',{state : {title : 'problemSolving'}});
   };
 
-  useEffect(() => {
-    getData();
-  }, []);
+  const redirectToPage2 = () => {
+    navigate('/result',{state : {title : 'memory'}});
+  };
+
+  const redirectToPage3 = () => {
+    navigate('/result',{state : {title : 'decisionMaking'}});
+  };
+
+  const redirectToPage4 = () => {
+    navigate('/result',{state : {title : 'attention'}});
+  };
 
   return (
     <div style={{ marginTop: "100px" }} class="container mt-5">
@@ -30,7 +32,7 @@ const Dashboard = () => {
           <div class="card p-3 py-4">
             <div class="text-center">
               <img
-                src="https://i.imgur.com/bDLhJiP.jpg"
+                src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
                 width="100"
                 class="rounded-circle"
               />
@@ -44,14 +46,34 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
-      {report &&
-        report.map((item) => (
-          <div className="row box">
-            <div className="col-md-4">{item.name}</div>
-            <div className="col-md-4">{item.category}</div>
-            <div className="col-md-4">{item.score}</div>
-          </div>
-        ))}
+      <br />
+      <br />
+      <Container className="text-center">
+        <Row >
+          <Col>
+            <Button variant="primary w-50 m-2" onClick={redirectToPage1}>
+              Problem Solving
+            </Button>
+          </Col>
+          <Col>
+            <Button variant="primary w-50 m-2" onClick={redirectToPage2}>
+              Memory
+            </Button>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Button variant="primary w-50 m-2" onClick={redirectToPage3}>
+              Decision Making
+            </Button>
+          </Col>
+          <Col>
+            <Button variant="primary w-50 m-2" onClick={redirectToPage4}>
+              Attention
+            </Button>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 };

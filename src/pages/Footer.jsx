@@ -20,7 +20,7 @@ function Footer() {
                 data-wow-delay="0.3s"
               >
                 <a href="#">
-                  <img src="images/newLogo.png" alt="Logo" />
+                  <img src="images/logo.png" alt="Logo" />
                 </a>
               </div>
             </div>

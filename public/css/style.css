@@ -1048,6 +1048,7 @@ p {
   color: #05de7d;
   font-family: "Open Sans", sans-serif;
 }
+
 @media (max-width: 767px) {
   .about-title .welcome {
     font-size: 16px;

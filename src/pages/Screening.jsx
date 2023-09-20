@@ -88,7 +88,7 @@ const Screening = () => {
             onClick={next}
             className={` ${
               !data.length ? "disabled" : ""
-            } btn btn-lg rounded-0 ms-3 pe-5 pt-2 pb-2 ps-5 btn-outline-primary-1`}
+            } btn btn-lg rounded-0 m-3 pe-5 pt-2 pb-2 ps-5 btn-outline-primary-1`}
           >
             {`${
               page === selected.length + 2 && selected.length

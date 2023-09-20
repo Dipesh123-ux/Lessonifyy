@@ -26,10 +26,11 @@
   align-items: center;
   height: 100vh;
   background-color: #eee;
+  margin-top: 40px;
 }
 
 .inputDiv {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   position: relative;
 }
 
@@ -75,7 +76,7 @@
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 300px;
+  width: 500px;
   text-align: center;
   min-height: 350px;
   display: flex;

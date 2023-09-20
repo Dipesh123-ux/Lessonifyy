@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import "./css/landing.css";
 
 const Landing = () => {
   useEffect(() => {
@@ -15,7 +16,10 @@ const Landing = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
-              <div className="header-hero-content">
+              <div
+                className="header-hero-content"
+                style={{ marginTop: "-100px" }}
+              >
                 <h2
                   className="hero-title wow fadeInUp"
                   data-wow-duration="1s"
@@ -23,13 +27,12 @@ const Landing = () => {
                 >
                   Making a difference in the lives of early and slow learners
                 </h2>
-                {/* <p className="text wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">May be you need us.</p> */}
                 <div
                   className="header-play wow fadeInUp"
                   data-wow-duration="1s"
                   data-wow-delay="0.8s"
                 >
-                  <a className="play-btn" href="#">
+                  <a className="play-btn" href="/screening">
                     Explore
                   </a>
                 </div>
@@ -41,17 +44,29 @@ const Landing = () => {
           className="header-hero-image d-flex align-items-center wow fadeInRightBig"
           data-wow-duration="1s"
           data-wow-delay="1.1s"
+          style={{ marginTop: "-100px" }}
         >
           <div className="image">
             <img src="images/hero-image.png" alt="Hero Image" />
           </div>
         </div>
 
-        <div className="header-shape">
-          <img src="images/shape/header-shape.png" alt="shape" />
+        <div className="header-shape" style={{ bottom: "-80px" }}>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path
+              fill="#eee"
+              fill-opacity="1"
+              d="M0,192C120,176,240,160,360,160C480,160,600,176,720,160C840,144,960,96,1080,112C1200,128,1320,208,1440,224V320H1320C1200,320,1080,320,960,320C840,320,720,320,600,320C480,320,360,320,240,320C120,320,0,320,0,320Z"
+            ></path>
+          </svg>
         </div>
       </div>
-      <section id="about" className="about-area pt-110 pb-120">
+
+      <section
+        id="about"
+        className="about-area pt-110 pb-120"
+        style={{ marginTop: "-120px", zIndex: "11", position: "relative" }}
+      >
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-9">
@@ -80,7 +95,7 @@ const Landing = () => {
             </div>
             <div className="col-lg-6">
               <div
-                className="about-content mt-50 wow fadeInRightBig"
+                className="about-content paraAbout mt-50 wow fadeInRightBig"
                 data-wow-duration="1s"
                 data-wow-delay="0.5s"
               >
@@ -115,6 +130,7 @@ const Landing = () => {
           </div>
         </div>
       </section>
+
       <section
         className="analysis-area pt-115 pb-120 bg_cover"
         style={{ backgroundImage: "url('./images/analysis.jpg')" }}

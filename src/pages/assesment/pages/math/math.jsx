@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./math.css";
+import { useNavigate } from "react-router-dom";
 
-const Math = () => {
+const Maths = () => {
+  const navigate = useNavigate();
   const [age, setAge] = useState(6);
   const [num1, setNum1] = useState(0);
   const [num2, setNum2] = useState(0);
@@ -12,26 +14,41 @@ const Math = () => {
   const [isIncorrect, setIsIncorrect] = useState(false);
   const [correctAnswer, setCorrectAnswer] = useState(null);
   const [isTimerActive, setIsTimerActive] = useState(false);
-  const [timer, setTimer] = useState(10);
+  const [timer, setTimer] = useState(20);
   const [questionCount, setQuestionCount] = useState(0);
   const [totalQuestions] = useState(10);
   const [gameEnded, setGameEnded] = useState(false);
+  let user = JSON.parse(localStorage.getItem("user"));
 
-  const handleAgeChange = (e) => {
-    setAge(parseInt(e.target.value));
+  const handleFinish = () => {
+    fetch("https://smiling-pig-turtleneck.cyclic.app/api/addscore", {
+      method: "post",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        testName: "problemSolving",
+        testScore: correct,
+        testUser: user._id,
+      }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        setTimeout(() => {
+          navigate("/assesment");
+        }, 500);
+      })
+      .catch((err) => console.log(err));
   };
 
   const generateProblem = () => {
-    if (questionCount >= totalQuestions) {
-      setGameEnded(true);
-      setIsTimerActive(false);
+    if (questionCount >= 10) {
+      handleFinish();
       return;
     }
 
-    let maxNumber = age * 3;
-    if (maxNumber > 100) {
-      maxNumber = 100;
-    }
+    const maxNumber = Math.min(age * 3, 100);
 
     const randomNum1 = Math.floor(Math.random() * maxNumber);
     const randomNum2 = Math.floor(Math.random() * maxNumber);
@@ -52,29 +69,42 @@ const Math = () => {
 
   const startTimer = () => {
     setIsTimerActive(true);
-    setTimer(10);
+    setTimer(30);
   };
 
   useEffect(() => {
-    startTimer();
+    if (!gameEnded) {
+      generateProblem();
+    }
   }, []);
 
   useEffect(() => {
     let countdown;
+
     if (isTimerActive && timer > 0) {
-      countdown = setTimeout(() => {
+      countdown = setInterval(() => {
         setTimer(timer - 1);
       }, 1000);
     } else if (isTimerActive && timer === 0) {
       setIsIncorrect(true);
-      setCorrectAnswer(null);
+      setCorrectAnswer(num1 + num2);
       generateProblem();
     }
-    return () => clearTimeout(countdown);
-  }, [isTimerActive, timer]);
+
+    return () => {
+      clearInterval(countdown);
+    };
+  }, [isTimerActive, timer, num1, num2, generateProblem]);
 
   const handleSubmit = () => {
     if (gameEnded) {
+      return;
+    }
+
+    if (userResult.trim() === "") {
+      setIsIncorrect(true);
+      setCorrectAnswer(num1 + num2);
+      generateProblem();
       return;
     }
 
@@ -110,6 +140,7 @@ const Math = () => {
     if (questionCount + 1 < totalQuestions) {
       generateProblem();
     } else {
+      handleFinish();
       setGameEnded(true);
       setIsTimerActive(false);
     }
@@ -124,58 +155,64 @@ const Math = () => {
   };
 
   return (
-    <div className="mathContainer">
-      <div className="header">
-        <h1 className="title">Math Game</h1>
-        <label>
-          Age:
-          <input type="number" value={age} onChange={handleAgeChange} />
-        </label>
-      </div>
-      <div className="equation">
-        {num1} {operator} {num2} =
-      </div>
-      <input
-        className="input-field"
-        placeholder="Your Answer"
-        value={userResult}
-        onChange={(e) => setUserResult(e.target.value)}
-      />
-      <button className="submit-button" onClick={handleSubmit}>
-        Submit
-      </button>
-      {isIncorrect && (
-        <div className="incorrect-answer">
-          Incorrect. The correct answer is{" "}
-          <span className="correct-answer">{correctAnswer}</span>.
+    <div className="mathdiv">
+      <div className="mathContainer">
+        <div className="header">
+          <h1 className="title">Problem Solving</h1>
         </div>
-      )}
-      <div className="timer">Time Remaining: {timer} seconds</div>
-      <div className="correct-count">Correct Answers: {correct}</div>
-      <div className="question-count">
-        Question {questionCount + 1} of {totalQuestions}
-      </div>
-      {questionCount + 1 < totalQuestions && (
-        <button className="generate-button" onClick={generateProblem}>
-          Next Question
-        </button>
-      )}
-      {gameEnded && (
-        <div className="results-container">
-          <div className="results-text">
-            Game Over!
-            <br />
-            Correct Answers: {correct}
-            <br />
-            Incorrect Answers: {incorrect}
+        {!gameEnded ? (
+          <div className="contentDiv">
+            <div className="equation">
+              {num1} {operator} {num2} =
+            </div>
+            <input
+              className="input-field"
+              placeholder="Your Answer"
+              value={userResult}
+              onChange={(e) => setUserResult(e.target.value)}
+            />
+            <button className="submit-button" onClick={handleSubmit}>
+              Submit
+            </button>
+            {isIncorrect && (
+              <div className="incorrect-answer">
+                Incorrect. The correct answer is{" "}
+                <span className="correct-answer">{correctAnswer}</span>.
+              </div>
+            )}
+            <div className="timer">Time Remaining: {timer} seconds</div>
+            <div className="correct-count">Correct Answers: {correct}</div>
+            <div className="question-count">
+              Question {questionCount + 1} of {totalQuestions}
+            </div>
+            {questionCount + 1 < totalQuestions && (
+              <button className="generate-button" onClick={generateProblem}>
+                Next Question
+              </button>
+            )}
+            {gameEnded && (
+              <div className="results-container">
+                <div className="results-text">
+                  Game Over!
+                  <br />
+                  Correct Answers: {correct}
+                  <br />
+                  Incorrect Answers: {incorrect}
+                </div>
+                <button className="results-button" onClick={resetGame}>
+                  Play Again
+                </button>
+              </div>
+            )}
           </div>
-          <button className="results-button" onClick={resetGame}>
-            Play Again
-          </button>
-        </div>
-      )}
+        ) : (
+          <div className="mathscoreDiv">
+            <p className="mathscorePara">Your total score is : {correct}</p>
+          </div>
+        )}
+      </div>
     </div>
   );
 };
 
-export default Math;
+export default Maths;

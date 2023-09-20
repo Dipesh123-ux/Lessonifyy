@@ -33,7 +33,7 @@ const Signup = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(values);
+    // console.log(values);
 
     const result = await fetch(
       "https://smiling-pig-turtleneck.cyclic.app/api/registerpatient",
@@ -48,7 +48,7 @@ const Signup = () => {
     );
 
     const response = await result.json();
-    console.log(response)
+    // console.log(response);
     if (response.message === "success") {
       setValues(defaultValues);
       navigate("/login_pg");
@@ -123,7 +123,6 @@ const Signup = () => {
         </div>
 
         <div className="form-group">
-
           <input
             type="text"
             name="aadharNumber"

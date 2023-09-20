@@ -46,9 +46,9 @@ const Assessment = () => {
           <div style={st}>
             <NavLink
               title="Test for the students having  dyscalculia"
-              to="/math"
+              to="/problemSolving"
             >
-              <h3>Math</h3>
+              <h3>Problem-Solving</h3>
             </NavLink>
           </div>
           <div style={st}>

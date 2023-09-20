@@ -1,50 +1,89 @@
+/* math.css */
+.mathdiv {
+  height: 100vh;
+}
 .mathContainer {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f0f0f0;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  min-height: 100vh;
+  max-width: 400px;
+  max-height: 80vh;
+  margin: 15vh auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.header {
+  margin-bottom: 20px;
+  position: relative;
+  top: -15vh;
 }
 
 .title {
   font-size: 24px;
-  margin-bottom: 10px;
+}
+
+.contentDiv {
+  position: relative;
+  top: -12vh;
 }
 
 .equation {
-  font-size: 28px;
-  margin: 20px 0;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.mathscoreDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -10vh;
+}
+
+.mathscorePara {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .input-field {
   width: 100%;
   padding: 10px;
+  margin-bottom: 10px;
   font-size: 18px;
-  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: black;
 }
 
-.submit-button {
+.submit-button,
+.generate-button,
+.results-button {
   background-color: #007bff;
-  color: white;
+  color: #fff;
   padding: 10px 20px;
   font-size: 18px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin-top: 10px;
 }
 
-.submit-button:hover {
+.submit-button:hover,
+.generate-button:hover,
+.results-button:hover {
   background-color: #0056b3;
 }
 
 .incorrect-answer {
+  color: #ff0000;
   font-size: 18px;
-  color: red;
   margin-top: 10px;
-  animation: fadeIn 1s ease-in;
 }
 
 .correct-answer {
@@ -56,73 +95,24 @@
   margin-top: 10px;
 }
 
-.correct-count {
-  font-size: 18px;
-  margin-top: 10px;
-}
-
+.correct-count,
 .question-count {
   font-size: 18px;
   margin-top: 10px;
 }
 
-.generate-button {
-  background-color: #4caf50;
-  color: white;
-  padding: 10px 20px;
-  font-size: 18px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 20px;
-}
-
-.generate-button:hover {
-  background-color: #45a049;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-/* Add this to App.css */
-
 .results-container {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
   margin-top: 20px;
-}
-
-.results-container.show {
-  animation: fadeIn 1s ease-in;
-  display: flex;
 }
 
 .results-text {
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
-.results-button {
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  font-size: 18px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 20px;
-}
-
-.results-button:hover {
-  background-color: #0056b3;
+@media screen and (max-width: 768px) {
+  .mathContainer {
+    max-width: 100%;
+  }
 }

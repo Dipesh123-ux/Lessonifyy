@@ -3,15 +3,13 @@ import { NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 function Header(props) {
+  let navigate = useNavigate();
 
-  let navigate = useNavigate()
-
-
-  const handleLogout = ()=>{
-     localStorage.removeItem("user");
-     navigate('/signup')
-  }
-  let user = JSON.parse(localStorage.getItem('user'));
+  const handleLogout = () => {
+    localStorage.removeItem("user");
+    navigate("/signup");
+  };
+  let user = JSON.parse(localStorage.getItem("user"));
 
   return (
     <header className="header-area">
@@ -47,49 +45,50 @@ function Header(props) {
                         Home
                       </NavLink>
                     </li>
-                    <li className="nav-item">
-                      {/* {props.auth ? ( */}
+                    {user && (
+                      <li className="nav-item">
                         <NavLink to="/screening" activeclassname="active">
                           Screening
                         </NavLink>
-                      {/* ) : null} */}
-                    </li>
+                      </li>
+                    )}
 
-                    <li className="nav-item">
-                      {/* {props.auth ? ( */}
+                    {user && (
+                      <li className="nav-item">
                         <NavLink to="/assesment" activeclassname="active">
                           Tests
                         </NavLink>
-                      {/* ) : null} */}
-                    </li>
-                    {
-                      user &&    <li className="nav-item">
-                      {/* {props.auth ? ( */}
+                      </li>
+                    )}
+                    {user && (
+                      <li className="nav-item">
                         <NavLink to="/dashboard" activeclassname="active">
                           Dashboard
                         </NavLink>
-                      {/* ) : null} */}
-                    </li>
-                    }
+                      </li>
+                    )}
                   </ul>
                 </div>
 
                 <div className="navbar-btn d-none d-sm-inline-block">
                   {/* {props.auth ? null : ( */}
-                   {!user? <NavLink
+                  {!user ? (
+                    <NavLink
                       to="/signup"
                       activeclassname="active"
                       className="main-btn"
                     >
                       Sign up
-                    </NavLink> : 
-                     <button
+                    </NavLink>
+                  ) : (
+                    <button
                       onClick={handleLogout}
                       activeclassname="active"
                       className="main-btn"
                     >
                       Log Out
-                    </button>}
+                    </button>
+                  )}
                 </div>
 
                 <div className="navbar-btn d-none d-sm-inline-block">

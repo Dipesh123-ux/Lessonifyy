@@ -1,0 +1,128 @@
+.mathContainer {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-height: 100vh;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.equation {
+  font-size: 28px;
+  margin: 20px 0;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.incorrect-answer {
+  font-size: 18px;
+  color: red;
+  margin-top: 10px;
+  animation: fadeIn 1s ease-in;
+}
+
+.correct-answer {
+  font-weight: bold;
+}
+
+.timer {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.correct-count {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.question-count {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.generate-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.generate-button:hover {
+  background-color: #45a049;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Add this to App.css */
+
+.results-container {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.results-container.show {
+  animation: fadeIn 1s ease-in;
+  display: flex;
+}
+
+.results-text {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.results-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.results-button:hover {
+  background-color: #0056b3;
+}

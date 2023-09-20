@@ -42,6 +42,36 @@ export default function MemoryGame() {
   const [matched, setMatched] = useState([]);
   const [moves, setMoves] = useState(0);
 
+  function calculateScore(moves) {
+    moves = Math.min(100, Math.max(0, moves));
+
+    const maxMoves = 100;
+    const minScore = 0;
+    const maxScore = 10;
+
+    const score =
+      ((maxMoves - moves) / maxMoves) * (maxScore - minScore) + minScore;
+
+    return score;
+  }
+
+  const handleFinish = () => {
+    fetch("http://localhost:8080/api/addscore", {
+      method: "post",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        testName: "memory",
+        testScore: calculateScore(moves),
+        testUser: "ritik",
+      }),
+    })
+      .then((res) => res.json())
+      .then((data) => console.log(data))
+      .catch((err) => console.log(err));
+  };
+
   useEffect(() => {
     if (opened.length < 2) return;
 
@@ -57,7 +87,10 @@ export default function MemoryGame() {
   }, [opened]);
 
   useEffect(() => {
-    if (matched.length === pokemon.length) alert("you won!");
+    if (matched.length === pokemon.length) {
+      handleFinish();
+      alert("you won!");
+    }
   }, [matched]);
 
   function flipCard(index) {

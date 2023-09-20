@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import ChartComponent from '../components/ChartComponent';
+import TestTable from 'components/testTable';
 
 const Result = () => {
 
@@ -8,6 +9,7 @@ const Result = () => {
     const location = useLocation();
     const [attempts, setAttempts] = useState(0);
     const [score,setScore] = useState([]);
+    const [data,setData] = useState([])
 
     const { title } = location.state;
 
@@ -30,7 +32,7 @@ const Result = () => {
                 score.push(res.testScore.toFixed(2));
             })
 
-            console.log(response)
+            setData(response.score)
 
         }
 
@@ -44,6 +46,9 @@ const Result = () => {
         <div className="" >
             <h2 className="text-center mt-100" >{title.toUpperCase()} REPORTS</h2>
             {score.length > 0 && <ChartComponent scores={score} numberOfAttempts={attempts} />}
+             <div>
+            <TestTable testData={data} />
+             </div>
         </div>
     )
 }

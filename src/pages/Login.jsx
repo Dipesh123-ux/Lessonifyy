@@ -11,7 +11,6 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // console.log(values)
     const result = await fetch(
       "https://smiling-pig-turtleneck.cyclic.app/api/loginpatient",
       {
@@ -26,7 +25,6 @@ const Login = () => {
 
     const response = await result.json();
 
-    console.log(response);
     if (response.user) {
       localStorage.setItem("user", JSON.stringify(response.user));
       navigate("/");
@@ -34,11 +32,10 @@ const Login = () => {
   };
 
   return (
-    <div className="signupDiv">
-      <form className="signupForm" onSubmit={handleSubmit}>
-        <h3>Log In</h3>
-        <div className="form-group">
-          <label>Email address</label>
+    <div className="signinDiv">
+      <form className="signinForm " onSubmit={handleSubmit}>
+        <h3 className="loginHeading">Log In</h3>
+        <div className="margin-top form-group">
           <input
             onChange={(e) => setValues({ ...values, email: e.target.value })}
             type="email"
@@ -47,7 +44,6 @@ const Login = () => {
           />
         </div>
         <div className="form-group">
-          <label>Password</label>
           <input
             onChange={(e) => setValues({ ...values, password: e.target.value })}
             type="password"
@@ -59,7 +55,7 @@ const Login = () => {
           LogIn
         </button>
         <p className="forgot-password text-right">
-          <Link to="/login_pg">Forget Password?</Link>
+          <Link to="/signin">Forget Password?</Link>
         </p>
       </form>
     </div>

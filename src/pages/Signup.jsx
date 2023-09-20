@@ -33,7 +33,6 @@ const Signup = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(values);
 
     const result = await fetch(
       "https://smiling-pig-turtleneck.cyclic.app/api/registerpatient",
@@ -48,17 +47,16 @@ const Signup = () => {
     );
 
     const response = await result.json();
-    console.log(response)
     if (response.message === "success") {
       setValues(defaultValues);
-      navigate("/login_pg");
+      navigate("/signin");
     }
   };
 
   return (
     <div className="signupDiv">
       <form className="signupForm" onSubmit={handleSubmit}>
-        <h3>Sign Up</h3>
+        <h3 className="loginHeading">Sign Up</h3>
         <div className="form-group">
           <input
             type="text"
@@ -123,7 +121,6 @@ const Signup = () => {
         </div>
 
         <div className="form-group">
-
           <input
             type="text"
             name="aadharNumber"
@@ -141,7 +138,7 @@ const Signup = () => {
           Sign Up
         </button>
         <p className="forgot-password text-right">
-          Already registered <Link to="/login_pg">sign in?</Link>
+          Already registered <Link to="/signin">sign in?</Link>
         </p>
       </form>
     </div>

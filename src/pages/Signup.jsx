@@ -11,7 +11,7 @@ const Signup = () => {
     password: "",
     age: "",
     gender: "",
-    aadhaarCard: "",
+    aadharNumber: "",
   };
 
   const [values, setValues] = useState({
@@ -20,7 +20,7 @@ const Signup = () => {
     password: "",
     age: "",
     gender: "",
-    aadhaarCard: "",
+    aadharNumber: "",
   });
 
   const handleChange = (e) => {
@@ -36,7 +36,7 @@ const Signup = () => {
     console.log(values);
 
     const result = await fetch(
-      "https://rose-upset-raven.cyclic.app/api/signup",
+      "https://smiling-pig-turtleneck.cyclic.app/api/registerpatient",
       {
         method: "POST",
         headers: {
@@ -48,6 +48,7 @@ const Signup = () => {
     );
 
     const response = await result.json();
+    console.log(response)
     if (response.message === "success") {
       setValues(defaultValues);
       navigate("/login_pg");
@@ -59,7 +60,6 @@ const Signup = () => {
       <form className="signupForm" onSubmit={handleSubmit}>
         <h3>Sign Up</h3>
         <div className="form-group">
-          <label className="label">Name</label>
           <input
             type="text"
             name="name"
@@ -71,7 +71,6 @@ const Signup = () => {
           />
         </div>
         <div className="form-group">
-          <label className="label">Email address</label>
           <input
             type="email"
             name="email"
@@ -83,7 +82,6 @@ const Signup = () => {
           />
         </div>
         <div className="form-group">
-          <label className="label">Password</label>
           <input
             type="password"
             name="password"
@@ -96,7 +94,6 @@ const Signup = () => {
         </div>
 
         <div className="form-group">
-          <label className="label">Age</label>
           <input
             type="number"
             name="age"
@@ -111,9 +108,6 @@ const Signup = () => {
         </div>
 
         <div className="inputDiv">
-          <label className="label" htmlFor="gender">
-            Select Gender:
-          </label>
           <select
             className="genderDropdown"
             id="gender"
@@ -121,7 +115,7 @@ const Signup = () => {
             value={values.gender}
             onChange={handleChange}
           >
-            <option value="">Select</option>
+            <option value="">Gender</option>
             <option value="male">Male</option>
             <option value="female">Female</option>
             <option value="other">Other</option>
@@ -129,11 +123,11 @@ const Signup = () => {
         </div>
 
         <div className="form-group">
-          <label className="label">Aadhaar Card No.</label>
+
           <input
             type="text"
-            name="aadhaarCard"
-            value={values.aadhaarCard}
+            name="aadharNumber"
+            value={values.aadharNumber}
             onChange={handleChange}
             className="form-control"
             placeholder="Enter Aadhaar No."
@@ -143,7 +137,6 @@ const Signup = () => {
             required
           />
         </div>
-
         <button type="submit" className="btn btn-primary btn-block">
           Sign Up
         </button>

@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,18 +15,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 /* .signs_t{
   color: black;
 } */
 
-.heading{
+.heading {
   color: #4bb3f9;
 }
-.did_you{
+
+.did_you {
   background-color: #4bb3f9;
   color: white;
   border-radius: 5px;
 }
+
 /* .btn-outline-primary {
   background-color: white;
   border: 4px solid #4bb3f9;
@@ -35,37 +42,42 @@ code {
 } */
 .btn-outline-primary:focus {
   color: white;
-  background-color:#4bb3f9;
+  background-color: #4bb3f9;
   /* border-color:#4bb3f9; */
   border: 0px solid #4bb3f9;
 }
-.main_div{
+
+.main_div {
   background-color: #f5f4f4;
   padding-bottom: 20px;
 }
-.did_you_know{
+
+.did_you_know {
   /* color: #404040; */
   color: black;
   font-size: 16px;
 }
 
-.btn-outline-primary-1{
+.btn-outline-primary-1 {
   background-color: white;
   border: 2px solid #404040;
 }
-.btn-outline-primary-1:hover{
+
+.btn-outline-primary-1:hover {
   background-color: #4bb3f9;
   color: white;
 }
+
 /* .btn-outline-primary-1:focus{
   border: 2px solid #4bb3f9;
   background-color: #4bb3f9;
   color: white;
 } */
-.lead{
+.lead {
   font-weight: 400;
   font-size: 1.1rem;
 }
+
 /* .btn:focus{
   border: none;
 }
@@ -73,57 +85,63 @@ code {
   border: none;
 } */
 
-.grade{
+.grade {
   background-color: white;
   border: 4px solid #4bb3f9;
   width: 308px;
   border-radius: 5px;
 }
-.grade:hover{
+
+.grade:hover {
   background-color: #4bb3f9 !important;
   box-shadow: none !important;
   border: 4px solid #f5f4f4;
   /* border: none; */
 }
-.grade:focus{
+
+.grade:focus {
   border: 2px solid #4bb3f9;
   background-color: #4bb3f9;
   color: white;
 }
-.next{
+
+.next {
   border: 2px solid #4bb3f9;
   background-color: #4bb3f9;
   color: white;
   width: auto;
   padding: 8px 24px;
 }
-.next:hover{
+
+.next:hover {
   background-color: #0d6efd !important;
   box-shadow: none !important;
   /* border: 4px solid #f5f4f4; */
   /* border: none; */
 }
-.next:focus{
+
+.next:focus {
   border: 2px solid #4bb3f9;
   background-color: #4bb3f9;
   color: white;
 }
 
-.progress{
+.progress {
   background-color: #d8d8d8;
   border-radius: 10px;
   position: relative;
   margin: 25px 0;
   height: 30px;
-  margin:auto;
+  margin: auto;
   width: 200px;
 }
-.progDone{
+
+.progDone {
   background: #4bb3f9;
-   border-radius: 10px;
+  border-radius: 10px;
   color: black;
   width: 0;
-  opacity: 0; 
+  opacity: 0;
   transition: 1s ease 0.3s;
 }
 
@@ -152,14 +170,19 @@ code {
   font-size: large;
 }
 
-.quizBox{
-  margin-top : 100px;
+.quizBox {
+  margin-top: 100px;
   margin-bottom: 100px;
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .main-content {
@@ -188,6 +211,7 @@ code {
   height: 280px;
   border-radius: 5px;
 }
+
 .timer-comp {
   margin-top: 13%;
   display: flex;
@@ -201,6 +225,7 @@ code {
   justify-content: center;
   align-items: center;
 }
+
 .option {
   display: block;
   width: 100%;
@@ -226,7 +251,7 @@ code {
 
 .continue-btn {
   padding: 12px 20px;
-  background-color:#4ba9f9;
+  background-color: #4ba9f9;
   font-size: 20px;
   border-radius: 10px;
   box-shadow: 0 0 2px 2px #d2d2d2;
@@ -245,6 +270,7 @@ code {
 .green {
   background-color: green;
 }
+
 .green:hover {
   background-color: green;
 }
@@ -276,14 +302,17 @@ code {
   font-size: 24px;
   font-weight: bolder;
 }
+
 .winner-label {
   color: green;
 }
+
 .loser-label {
   color: red;
 }
 
 @media only screen and (max-width: 992px) {
+
   .item-options,
   .item-image {
     margin: 16px 0;

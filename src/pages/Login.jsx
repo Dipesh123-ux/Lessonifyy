@@ -13,7 +13,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         // console.log(values)
-        const result = await fetch('https://rose-upset-raven.cyclic.app/api/login', {
+        const result = await fetch('https://smiling-pig-turtleneck.cyclic.app/api/loginpatient', {
             method: 'POST',
             headers: {
                 accept: 'application/json',
@@ -30,7 +30,6 @@ const Login = () => {
             navigate('/')
         }
       
-
     }
 
     return (

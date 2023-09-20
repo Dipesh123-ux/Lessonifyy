@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import shuffle from "lodash.shuffle";
 import "./memoryGame.css";
+import { useNavigate } from "react-router-dom";
 
 const pokemon = [
   {
@@ -39,6 +40,7 @@ const doublePokemon = shuffle([...pokemon, ...pokemon]);
 
 export default function MemoryGame() {
   let user = JSON.parse(localStorage.getItem("user"));
+  const navigate = useNavigate();
   const [opened, setOpened] = useState([]);
   const [matched, setMatched] = useState([]);
   const [moves, setMoves] = useState(0);
@@ -69,7 +71,11 @@ export default function MemoryGame() {
       }),
     })
       .then((res) => res.json())
-      .then((data) => console.log(data))
+      .then((data) => {
+        setTimeout(() => {
+          navigate("/assesment");
+        }, 500);
+      })
       .catch((err) => console.log(err));
   };
 

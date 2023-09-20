@@ -4,7 +4,6 @@ import "./dashboard.css";
 const Dashboard = () => {
   let user = JSON.parse(localStorage.getItem("user"));
   const [report, setReport] = useState([]);
-  console.log(user);
 
   const getData = async () => {
     const result = await fetch(

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./DecisionMaking.css";
+import { useNavigate } from "react-router-dom";
 
 const dataByAgeGroup = {
   "0-4": [
@@ -54,6 +55,7 @@ const dataByAgeGroup = {
 
 const WordGame = () => {
   let user = JSON.parse(localStorage.getItem("user"));
+  const navigate = useNavigate();
   const [word, setWord] = useState("");
   const [selectedLetters, setSelectedLetters] = useState([]);
   const [chosenLetters, setChosenLetters] = useState([]);
@@ -78,12 +80,16 @@ const WordGame = () => {
       }),
     })
       .then((res) => res.json())
-      .then((data) => console.log(data))
+      .then((data) => {
+        setTimeout(() => {
+          navigate("/assesment");
+        }, 500);
+      })
       .catch((err) => console.log(err));
   };
 
   const chooseRandom = () => {
-    if (round >= 11) {
+    if (round >= 6) {
       setGameOver(true);
       setTotalScore(score);
       clearInterval(timer);
@@ -187,7 +193,7 @@ const WordGame = () => {
             <h3 className="word">Word:{word}</h3>
             <div className="game-info">
               <div>Time Remaining: {timeRemaining} seconds</div>
-              <div>Round: {round} / 10</div>
+              <div>Round: {round} / 5</div>
               <div>Score: {score}</div>
             </div>
             <div className="letter-container">

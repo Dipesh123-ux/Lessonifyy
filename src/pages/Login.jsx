@@ -11,7 +11,6 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // console.log(values)
     const result = await fetch(
       "https://smiling-pig-turtleneck.cyclic.app/api/loginpatient",
       {
@@ -26,7 +25,6 @@ const Login = () => {
 
     const response = await result.json();
 
-    console.log(response);
     if (response.user) {
       localStorage.setItem("user", JSON.stringify(response.user));
       navigate("/");

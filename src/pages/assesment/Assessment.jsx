@@ -1,21 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import "./assesment.css";
 
 const Assessment = () => {
-  const st = {
-    display: "flex",
-    height: "20vw",
-    width: "auto",
-    border: "2px solid black",
-    justifyContent: "center",
-    alignItems: "center",
-    margin: "30px",
-    borderRadius: "30px",
-  };
-
   return (
-    <div style={{ marginTop: "200px" }}>
-      <h1>Assessment</h1>
+    <div className="assesmentDiv">
+      <h1 className="assHeading">Assessment</h1>
       <div
         type="circle"
         style={{
@@ -25,7 +15,7 @@ const Assessment = () => {
         }}
       >
         <div className="col-md-6">
-          <div style={st}>
+          <div className="categoryDiv">
             <NavLink
               title="Test for the students having Specific Language Impairment "
               to="/wordGame"
@@ -33,17 +23,14 @@ const Assessment = () => {
               <h3>Decision-Making</h3>
             </NavLink>
           </div>
-          <div style={st}>
-            <NavLink
-              title="Test for the students having dyslexia"
-              to="/memory"
-            >
+          <div className="categoryDiv">
+            <NavLink title="Test for the students having dyslexia" to="/memory">
               <h3>Memory</h3>
             </NavLink>
           </div>
         </div>
         <div className="col-md-6">
-          <div style={st}>
+          <div className="categoryDiv">
             <NavLink
               title="Test for the students having  dyscalculia"
               to="/problemSolving"
@@ -51,7 +38,7 @@ const Assessment = () => {
               <h3>Problem-Solving</h3>
             </NavLink>
           </div>
-          <div style={st}>
+          <div className="categoryDiv">
             <NavLink to="/writing">
               <h3>Speech</h3>
             </NavLink>

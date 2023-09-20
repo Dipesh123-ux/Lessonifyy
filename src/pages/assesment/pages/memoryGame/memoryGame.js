@@ -38,6 +38,7 @@ const pokemon = [
 const doublePokemon = shuffle([...pokemon, ...pokemon]);
 
 export default function MemoryGame() {
+  let user = JSON.parse(localStorage.getItem("user"));
   const [opened, setOpened] = useState([]);
   const [matched, setMatched] = useState([]);
   const [moves, setMoves] = useState(0);
@@ -56,7 +57,7 @@ export default function MemoryGame() {
   }
 
   const handleFinish = () => {
-    fetch("http://localhost:8080/api/addscore", {
+    fetch("https://smiling-pig-turtleneck.cyclic.app/api/addscore", {
       method: "post",
       headers: {
         "Content-Type": "application/json",
@@ -64,7 +65,7 @@ export default function MemoryGame() {
       body: JSON.stringify({
         testName: "memory",
         testScore: calculateScore(moves),
-        testUser: "ritik",
+        testUser: user._id,
       }),
     })
       .then((res) => res.json())

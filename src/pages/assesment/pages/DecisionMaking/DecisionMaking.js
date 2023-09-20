@@ -53,6 +53,7 @@ const dataByAgeGroup = {
 };
 
 const WordGame = () => {
+  let user = JSON.parse(localStorage.getItem("user"));
   const [word, setWord] = useState("");
   const [selectedLetters, setSelectedLetters] = useState([]);
   const [chosenLetters, setChosenLetters] = useState([]);
@@ -65,7 +66,7 @@ const WordGame = () => {
   let timer;
 
   const handleFinish = () => {
-    fetch("http://localhost:8080/api/addscore", {
+    fetch("https://smiling-pig-turtleneck.cyclic.app/api/addscore", {
       method: "post",
       headers: {
         "Content-Type": "application/json",
@@ -73,7 +74,7 @@ const WordGame = () => {
       body: JSON.stringify({
         testName: "decisionMaking",
         testScore: score,
-        testUser: "",
+        testUser: user._id,
       }),
     })
       .then((res) => res.json())

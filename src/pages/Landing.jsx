@@ -62,7 +62,7 @@ const Landing = () => {
               >
                 <h6 className="welcome">WELCOME</h6>
                 <h3 className="title">
-                  Know more about <span>Lessonify</span>
+                  Know more about <span>NeuroTrain</span>
                 </h3>
               </div>
             </div>
@@ -87,7 +87,7 @@ const Landing = () => {
                 <h3 className="title">Assessments</h3>
                 <ul className="about-line">
                   <p className="text">
-                    Lessonify uses interactive learning assessments to identify
+                    NeuroTrain uses interactive learning assessments to identify
                     gaps in a child’s academic profile.
                   </p>
                   <li></li>
@@ -128,7 +128,7 @@ const Landing = () => {
                 data-wow-delay="0.2s"
               >
                 <h4 className="title">
-                  How common are Specific Learning Disabilities?
+                  How common are Cognitive Disabilities?
                 </h4>
               </div>
             </div>
@@ -204,7 +204,7 @@ const Landing = () => {
               <br />
               when reading or learning with{" "}
               <span>
-                Lessonify
+                NeuroTrain
                 <span />
               </span>
             </h2>
@@ -215,7 +215,7 @@ const Landing = () => {
               data-wow-duration="1s"
               data-wow-delay="0.5s"
             >
-              Lessonify team believe in tech for good and want technology to be
+              NeuroTrain team believe in tech for good and want technology to be
               a part of special needs education industry.
             </p>
           </div>

@@ -90,7 +90,7 @@ export const preSchool = [
     ],
     low : "The results indicate a low risk of a learning disability in reading",
     medium : "Your child is showing a risk of a learning disability in Reading.",
-    common: "About 80% of children with a reading disability have dyslexia. Because a simple parent assessment cannot diagnose your child, we strongly recommend more testing. Give your child a more robust test for dyslexia with the Lessonify Dyslexia tests, which will test your child's abilities more thoroughly to give you a more accurate result.",
+    common: "About 80% of children with a reading disability have dyslexia. Because a simple parent assessment cannot diagnose your child, we strongly recommend more testing. Give your child a more robust test for dyslexia with the NeuroTrain Dyslexia tests, which will test your child's abilities more thoroughly to give you a more accurate result.",
   },
   {
     id: 6,
@@ -245,7 +245,7 @@ export const Grades_K_4 = [
 
     low : "The results indicate a low risk of a learning disability in reading",
     medium : "Your child is showing a risk of a learning disability in Reading.",
-    common: "About 80% of children with a reading disability have dyslexia. Because a simple parent assessment cannot diagnose your child, we strongly recommend more testing. Give your child a more robust test for dyslexia with the Lessonify Dyslexia tests, which will test your child's abilities more thoroughly to give you a more accurate result.",
+    common: "About 80% of children with a reading disability have dyslexia. Because a simple parent assessment cannot diagnose your child, we strongly recommend more testing. Give your child a more robust test for dyslexia with the NeuroTrain Dyslexia tests, which will test your child's abilities more thoroughly to give you a more accurate result.",
   },
   {
     id: 6,
@@ -396,7 +396,7 @@ export const Grades_5_8 = [
 
     low : "The results indicate a low risk of a learning disability in reading",
     medium : "Your child is showing a risk of a learning disability in Reading.",
-    common: "About 80% of children with a reading disability have dyslexia. Because a simple parent assessment cannot diagnose your child, we strongly recommend more testing. Give your child a more robust test for dyslexia with the Lessonify Dyslexia tests, which will test your child's abilities more thoroughly to give you a more accurate result.",
+    common: "About 80% of children with a reading disability have dyslexia. Because a simple parent assessment cannot diagnose your child, we strongly recommend more testing. Give your child a more robust test for dyslexia with the NeuroTrain Dyslexia tests, which will test your child's abilities more thoroughly to give you a more accurate result.",
   },
   {
     id: 6,
@@ -515,7 +515,7 @@ export const High_School_Young_Adult = [
 
     low : "The results indicate a low risk of a learning disability in reading",
     medium : "Your child is showing a risk of a learning disability in Reading.",
-    common: "About 80% of children with a reading disability have dyslexia. Because a simple parent assessment cannot diagnose your child, we strongly recommend more testing. Give your child a more robust test for dyslexia with the Lessonify Dyslexia tests, which will test your child's abilities more thoroughly to give you a more accurate result.",
+    common: "About 80% of children with a reading disability have dyslexia. Because a simple parent assessment cannot diagnose your child, we strongly recommend more testing. Give your child a more robust test for dyslexia with the NeuroTrain Dyslexia tests, which will test your child's abilities more thoroughly to give you a more accurate result.",
   },
   {
     id: 6,

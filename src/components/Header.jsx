@@ -19,6 +19,7 @@ const Header = (props) => {
         { title: "Home", path: "/" },
         { title: "Screening", path: "/screening" },
         { title: "Tests", path: "/assesment" },
+        {title: "EEG",path : "/eeg-reports" },
         { title: "Dashboard", path: "/dashboard" },
       ];
   useEffect(() => {

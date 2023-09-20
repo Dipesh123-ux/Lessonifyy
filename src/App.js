@@ -8,10 +8,9 @@ import Assessment from './pages/assesment/Assessment'
 import Spelling from './pages/assesment/pages/spelling/Spelling'
 import Signup from './pages/Signup'
 import Login from './pages/Login'
-import ImageQuiz from './pages/assesment/pages/imageQuiz/index.jsx'
 import Dashboard from './pages/Dashboard'
-import Writing from 'pages/assesment/pages/writing'
-import Speech from './pages/assesment/pages/speech'
+import WordGame from 'pages/assesment/pages/word/word';
+import MemoryGame from 'pages/assesment/pages/memoryGame/memoryGame'
 
 const App = () => {
   return (
@@ -25,11 +24,9 @@ const App = () => {
         <Route path="/login_pg" exact element={<Login />}></Route>
         <Route path="/assesment" exact element={<Assessment />}></Route>        
         <Route path="/spell" exact element={<Spelling />}></Route>     
-        <Route path="/imagequiz" exact element={<ImageQuiz />}></Route>     
+        <Route path="/attention" exact element={<MemoryGame />}></Route>     
+        <Route path="/wordGame" exact element={<WordGame />}></Route>     
         <Route path="/dashboard" exact element={<Dashboard />}></Route>     
-        <Route path="/writing" exact element={<Writing />}></Route>     
-        <Route path="/speech" exact element={<Speech />}></Route>     
-
       </Routes>
       <Footer />
     </div>

@@ -12,7 +12,7 @@ const Login = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        console.log(values)
+        // console.log(values)
         const result = await fetch('https://rose-upset-raven.cyclic.app/api/login', {
             method: 'POST',
             headers: {

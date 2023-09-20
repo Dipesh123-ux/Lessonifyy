@@ -31,13 +31,11 @@ function Footer() {
                 className="footer-about pt-40 wow fadeInLeftBig"
                 data-wow-duration="1s"
                 data-wow-delay="0.3s"
-                style={{marginTop:"-150px",marginLeft:"-120px"}}
+                style={{ marginTop: "-150px", marginLeft: "-120px" }}
               >
                 <a href="#">
                   <img src="images/logo.png" alt="Logo" />
                 </a>
-                {/* <p className="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, repudiandae! Totam, nemo sed? Provident.</p>
-                                <p className="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> */}
               </div>
             </div>
             <div className="col-lg-3 col-sm-6 order-sm-3 order-lg-2">

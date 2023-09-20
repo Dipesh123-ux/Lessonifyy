@@ -11,6 +11,7 @@ import Dashboard from "./pages/Dashboard";
 import WordGame from "pages/assesment/pages/DecisionMaking/DecisionMaking";
 import MemoryGame from "pages/assesment/pages/memoryGame/memoryGame";
 import Math from "./pages/assesment/pages/math/math";
+import Result from "./pages/Result";
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
         <Route path="/memory" exact element={<MemoryGame />}></Route>
         <Route path="/wordGame" exact element={<WordGame />}></Route>
         <Route path="/dashboard" exact element={<Dashboard />}></Route>
+        <Route path="/result" exact element={<Result />}></Route>
       </Routes>
       <Footer />
     </div>

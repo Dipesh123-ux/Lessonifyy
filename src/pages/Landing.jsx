@@ -144,7 +144,7 @@ const Landing = () => {
                 data-wow-delay="0.2s"
               >
                 <h4 className="title">
-                  How common are Specific Learning Disabilities?
+                  How common are Cognitive Disabilities?
                 </h4>
               </div>
             </div>

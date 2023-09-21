@@ -12,6 +12,8 @@ import WordGame from "pages/assesment/pages/DecisionMaking/DecisionMaking";
 import MemoryGame from "pages/assesment/pages/memoryGame/memoryGame";
 import Maths from "./pages/assesment/pages/math/math";
 import Result from "./pages/Result";
+import EEg from "pages/EEg";
+import EEgGraph from "pages/EEgGraph";
 
 const App = () => {
   return (
@@ -29,6 +31,8 @@ const App = () => {
         <Route path="/wordGame" exact element={<WordGame />}></Route>
         <Route path="/dashboard" exact element={<Dashboard />}></Route>
         <Route path="/result" exact element={<Result />}></Route>
+        <Route path="/eeg-reports" exact element={<EEg />}></Route>
+        <Route path="/eeg-graphs" exact element={<EEgGraph />}></Route>
       </Routes>
       <Footer />
     </div>

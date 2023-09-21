@@ -1,15 +1,18 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { ClipLoader } from "react-spinners";
 
 const Login = () => {
   let navigate = useNavigate();
+  const [loading,setLoading] = useState(false);
   const [values, setValues] = useState({
     email: "",
     password: "",
   });
 
   const handleSubmit = async (e) => {
+    setLoading(true);
     e.preventDefault();
     const result = await fetch(
       "https://smiling-pig-turtleneck.cyclic.app/api/loginpatient",
@@ -26,6 +29,7 @@ const Login = () => {
     const response = await result.json();
 
     if (response.user) {
+      setLoading(false)
       localStorage.setItem("user", JSON.stringify(response.user));
       navigate("/");
     }
@@ -52,7 +56,7 @@ const Login = () => {
           />
         </div>
         <button type="submit" className="btn btn-primary btn-block">
-          LogIn
+          {loading ? <ClipLoader color="white" className="mx-auto" size={20} /> : "Login"}
         </button>
         <p className="forgot-password text-right">
           <Link to="/signin">Forget Password?</Link>

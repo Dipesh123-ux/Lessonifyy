@@ -14,16 +14,15 @@ const Header = (props) => {
   const navRef = useRef(null);
   const sidebarRef = useRef(null);
   const navbarOption = !user
-    ? [
-        { title: "Home", path: "/" },
-        { title: "Doctors", path: "/doctor" },
-      ]
+    ? [{ title: "Home", path: "/" }, { title: "Screening", path: "/screening" },]
+
     : [
-        { title: "Home", path: "/" }, 
-        { title: "Screening", path: "/screening" },
-        { title: "Tests", path: "/assesment" },
-        { title: "Dashboard", path: "/dashboard" },
-      ];
+      { title: "Home", path: "/" },
+      { title: "Screening", path: "/screening" },
+      { title: "Tests", path: "/assesment" },
+      { title: "EEG", path: "/eeg-reports" },
+      { title: "Dashboard", path: "/dashboard" },
+    ];
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY >= 0 && window.innerWidth >= 720) {
@@ -51,7 +50,7 @@ const Header = (props) => {
         navRef.current.style.boxShadow = "";
       }
     });
-    return window.removeEventListener("scroll", () => {});
+    return window.removeEventListener("scroll", () => { });
   }, []);
 
   // for changing cross sign and showing nav menu

@@ -49,13 +49,13 @@ function Footer() {
                 </div>
                 <ul>
                   <li>
-                    <a href="#">Assessments</a>
+                    <a href="/assesment">Assessments</a>
                   </li>
                   <li>
-                    <a href="#">Profile</a>
+                    <a href="/eeg-reports">EEG Report</a>
                   </li>
                   <li>
-                    <a href="#">Practice</a>
+                    <a href="/dashboard">Dashboard</a>
                   </li>
                 </ul>
               </div>

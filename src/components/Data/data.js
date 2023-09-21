@@ -96,9 +96,11 @@ export const preSchool = [
       "Has difficulty tapping or clapping out the syllables in words",
       "Has difficulty recognizing the small units of sounds (phonemes) in spoken words",
     ],
-    low : "The results indicate a low risk of a cognitive disability in reading",
-    medium : "Your child is showing a risk of a cognitive disability in Reading.",
-    common: "About 80% of children with a reading disability have dyslexia. Because a simple parent assessment cannot diagnose your child, we strongly recommend more testing. Give your child a more robust test for dyslexia with the NeuroTrain Dyslexia tests, which will test your child's abilities more thoroughly to give you a more accurate result.",
+    low: "The results indicate a low risk of a cognitive disability in reading",
+    medium:
+      "Your child is showing a risk of a cognitive disability in Reading.",
+    common:
+      "About 80% of children with a reading disability have dyslexia. Because a simple parent assessment cannot diagnose your child, we strongly recommend more testing. Give your child a more robust test for dyslexia with the NeuroTrain Dyslexia tests, which will test your child's abilities more thoroughly to give you a more accurate result.",
   },
   {
     id: 6,

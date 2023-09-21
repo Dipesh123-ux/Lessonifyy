@@ -39,8 +39,8 @@ const Assessment = () => {
             </NavLink>
           </div>
           <div className="categoryDiv">
-            <NavLink to="/writing">
-              <h3>Speech</h3>
+            <NavLink to="/attention">
+              <h3>Attention</h3>
             </NavLink>
           </div>
         </div>

@@ -14,9 +14,12 @@ const Header = (props) => {
   const navRef = useRef(null);
   const sidebarRef = useRef(null);
   const navbarOption = !user
-    ? [{ title: "Home", path: "/" }]
-    : [
+    ? [
         { title: "Home", path: "/" },
+        { title: "Doctors", path: "/doctor" },
+      ]
+    : [
+        { title: "Home", path: "/" }, 
         { title: "Screening", path: "/screening" },
         { title: "Tests", path: "/assesment" },
         { title: "Dashboard", path: "/dashboard" },

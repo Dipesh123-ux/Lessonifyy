@@ -20,7 +20,6 @@ const Screening = () => {
   const [count, setCount] = useState(0);
   const [checked, setChecked] = useState({});
   const [finish, setFinish] = useState(false);
-  console.log(selected);
 
   const PageDisplay = () => {
     if (page === 1) {
@@ -81,6 +80,7 @@ const Screening = () => {
             className={`${
               page === 1 ? "disabled" : ""
             } btn btn-lg rounded-0 ms-3 pe-5 pt-2 pb-2 ps-5 btn-outline-primary-1`}
+            style={{ marginBottom: "10px" }}
           >
             Prev
           </button>

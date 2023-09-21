@@ -158,10 +158,10 @@ const Landing = () => {
                   data-wow-delay="0.7s"
                 >
                   <span className="count">
-                    <span className="counter">33</span>
+                    <span className="counter">10.8</span>
                     <span className="plus">%</span>
                   </span>
-                  <p className="text">Specific Learning Disability</p>
+                  <p className="text">Cognitive Disability</p>
                 </div>
               </div>
               <div className="col-md-3 col-6">
@@ -171,10 +171,10 @@ const Landing = () => {
                   data-wow-delay="0.3s"
                 >
                   <span className="count">
-                    <span className="counter">10</span>
+                    <span className="counter">1.2</span>
                     <span className="plus">%</span>
                   </span>
-                  <p className="text">Dyslexia</p>
+                  <p className="text">Autism Spectrum Disorder</p>
                 </div>
               </div>
               <div className="col-md-3 col-6">
@@ -184,10 +184,10 @@ const Landing = () => {
                   data-wow-delay="0.5s"
                 >
                   <span className="count">
-                    <span className="counter">14</span>
+                    <span className="counter">7.4</span>
                     <span className="plus">%</span>
                   </span>
-                  <p className="text">Dysgraphia</p>
+                  <p className="text">Alzheimer</p>
                 </div>
               </div>
 
@@ -198,10 +198,10 @@ const Landing = () => {
                   data-wow-delay="0.9s"
                 >
                   <span className="count">
-                    <span className="counter">6</span>
+                    <span className="counter">1.4</span>
                     <span className="plus">%</span>
                   </span>
-                  <p className="text">Dyscalculia</p>
+                  <p className="text">dementias</p>
                 </div>
               </div>
             </div>

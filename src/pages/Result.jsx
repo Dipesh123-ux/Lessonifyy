@@ -16,7 +16,7 @@ const Result = () => {
 
     useEffect(() => {
         const getData = async () => {
-            const result = await fetch('https://smiling-pig-turtleneck.cyclic.app/api/getScore', {
+            const result = await fetch('https://better-flannel-nightgown-bull.cyclic.app/api/getScore', {
                 method: 'POST',
                 headers: {
                     accept: 'application/json',

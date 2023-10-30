@@ -35,7 +35,7 @@ const Signup = () => {
     e.preventDefault();
 
     const result = await fetch(
-      "https://smiling-pig-turtleneck.cyclic.app/api/registerpatient",
+      "https://better-flannel-nightgown-bull.cyclic.app/api/registerpatient",
       {
         method: "POST",
         headers: {

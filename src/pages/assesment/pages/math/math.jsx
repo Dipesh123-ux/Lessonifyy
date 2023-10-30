@@ -21,7 +21,7 @@ const Maths = () => {
   let user = JSON.parse(localStorage.getItem("user"));
 
   const handleFinish = () => {
-    fetch("https://smiling-pig-turtleneck.cyclic.app/api/addscore", {
+    fetch("https://better-flannel-nightgown-bull.cyclic.app/api/addscore", {
       method: "post",
       headers: {
         "Content-Type": "application/json",

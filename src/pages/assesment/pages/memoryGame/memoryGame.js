@@ -59,7 +59,7 @@ export default function MemoryGame() {
   }
 
   const handleFinish = () => {
-    fetch("https://smiling-pig-turtleneck.cyclic.app/api/addscore", {
+    fetch("https://better-flannel-nightgown-bull.cyclic.app/api/addscore", {
       method: "post",
       headers: {
         "Content-Type": "application/json",

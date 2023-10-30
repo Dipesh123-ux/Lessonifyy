@@ -15,7 +15,7 @@ const Login = () => {
     setLoading(true);
     e.preventDefault();
     const result = await fetch(
-      "https://smiling-pig-turtleneck.cyclic.app/api/loginpatient",
+      "https://better-flannel-nightgown-bull.cyclic.app/api/loginpatient",
       {
         method: "POST",
         headers: {
